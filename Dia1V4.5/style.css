@@ -1,0 +1,159 @@
+/* Reset básico e variáveis */
+:root {
+    --cor-html: #e34c26;
+    --cor-css: #264de4;
+    --cor-js: #f0db4f;
+    --cor-texto: #333;
+    --cor-fundo: #f5f5f5;
+    --sombra: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    line-height: 1.5;
+}
+
+/* Layout básico */
+header, main, footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Navegação */
+nav {
+    margin-top: 15px;
+}
+
+.nav-link {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 10px;
+    color: var(--cor-texto);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover, .nav-link.ativo {
+    background-color: #ddd;
+}
+
+/* Cards */
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: var(--sombra);
+    transition: transform 0.3s;
+    border-top: 4px solid #ccc;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card[data-tipo="html"] {
+    border-top-color: var(--cor-html);
+}
+
+.card[data-tipo="css"] {
+    border-top-color: var(--cor-css);
+}
+
+.card[data-tipo="js"] {
+    border-top-color: var(--cor-js);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.lista-topicos {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* Seção interativa */
+#interacao {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--sombra);
+}
+
+.campo-interativo {
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4b6cb7;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3b5998;
+}
+
+#mensagem {
+    margin-top: 10px;
+    min-height: 20px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Classes para JavaScript */
+.destacado {
+    background-color: #fffde7;
+    font-weight: bold;
+}
+
+.escondido {
+    display: none;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tech Cards</h1>
+        <nav>
+            <a href="#" class="nav-link ativo" data-filter="todos">Todos</a>
+            <a href="#" class="nav-link" data-filter="html">HTML</a>
+            <a href="#" class="nav-link" data-filter="css">CSS</a>
+            <a href="#" class="nav-link" data-filter="js">JavaScript</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cards-container">
+            <!-- HTML Cards -->
+            <div class="card" data-tipo="html">
+                <h2>HTML</h2>
+                <p>Linguagem de marcação para estruturar páginas web</p>
+                <ul class="lista-topicos">
+                    <li>Define a estrutura da página</li>
+                    <li>Usa tags para marcar elementos</li>
+                </ul>
+            </div>
+
+            <!-- CSS Cards -->
+            <div class="card" data-tipo="css">
+                <h2>CSS</h2>
+                <p>Define a apresentação visual dos elementos HTML</p>
+                <ul class="lista-topicos">
+                    <li>Controla cores e layout</li>
+                    <li>Aplica estilos consistentes</li>
+                </ul>
+            </div>
+
+            <!-- JavaScript Cards -->
+            <div class="card" data-tipo="js">
+                <h2>JavaScript</h2>
+                <p>Adiciona interatividade às páginas web</p>
+                <ul class="lista-topicos">
+                    <li>Manipula o conteúdo da página</li>
+                    <li>Responde a eventos do usuário</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="interacao">
+            <h2>Experimente a interatividade</h2>
+            <div class="campo-interativo">
+                <label for="nome">Seu nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+                <button id="btn-acao">Personalizar</button>
+                <p id="mensagem"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Workshop de Introdução ao Desenvolvimento Web</p>
+        <p id="contador">Interações: 0</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

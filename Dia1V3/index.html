@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Cards Interativa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Galeria de Cards Interativa</h1>
+        <div class="filter-controls">
+            <button id="show-all" class="active">Mostrar Todos</button>
+            <button id="show-liked">Mostrar Curtidos</button>
+        </div>
+    </header>
+    
+    <main class="gallery">
+        <div class="card" data-id="1">
+            <img src="https://source.unsplash.com/random/300x200?mountain" alt="Montanha">
+            <div class="card-content">
+                <h2>Montanhas Rochosas</h2>
+                <p class="description-short">Uma paisagem incrível...</p>
+                <p class="description-full hidden">Uma paisagem incrível das montanhas rochosas com picos nevados e florestas verdejantes. Um lugar perfeito para aventuras ao ar livre.</p>
+                <div class="card-actions">
+                    <button class="more-info-btn">Saiba Mais</button>
+                    <button class="like-btn">
+                        <span class="heart">♡</span>
+                        <span class="like-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" data-id="2">
+            <img src="https://source.unsplash.com/random/300x200?ocean" alt="Oceano">
+            <div class="card-content">
+                <h2>Praias Paradisíacas</h2>
+                <p class="description-short">Águas cristalinas...</p>
+                <p class="description-full hidden">Águas cristalinas e areias douradas fazem dessas praias um verdadeiro paraíso. O local perfeito para relaxar e aproveitar o sol.</p>
+                <div class="card-actions">
+                    <button class="more-info-btn">Saiba Mais</button>
+                    <button class="like-btn">
+                        <span class="heart">♡</span>
+                        <span class="like-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" data-id="3">
+            <img src="https://source.unsplash.com/random/300x200?forest" alt="Floresta">
+            <div class="card-content">
+                <h2>Floresta Tropical</h2>
+                <p class="description-short">Biodiversidade rica...</p>
+                <p class="description-full hidden">Biodiversidade rica e exuberante vegetação fazem desta floresta um importante ecossistema. Lar de milhares de espécies de plantas e animais.</p>
+                <div class="card-actions">
+                    <button class="more-info-btn">Saiba Mais</button>
+                    <button class="like-btn">
+                        <span class="heart">♡</span>
+                        <span class="like-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Desenvolvido para Workshop de HTML, CSS e JavaScript</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

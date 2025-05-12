@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;/*inclui padding e borda dentro do width e height definidos, tornando o layout muito mais previsível e fácil de controlar*/
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #eaeff2;/*cor do fundo da página*/
+  color: #333;/*cor dos paragrafos ou listas texto*/
+  padding: 20px;/*tamanho da pagina do curriculo*/
+}
+
+.curriculo {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;/*largura da página*/
+  margin: auto;/*o navegador calcula automaticamente margens esquerda e direita para centralizá-la na tela*/
+  background-color: #fff;/*cor da página do currículo*/
+  border-radius: 12px;/*arredonda as bordas*/
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);/*sombra no fundo da página*/
+  padding: 30px;/*espacamento entre o conteudo e pagina*/
+}
+.topo {
+  display: flex;/*alinha itens em linha ou coluna facilmente*/
+  align-items: center;/*ajusta o conteudo do topo na vertical ja que esta no formato de coluna*/
+  gap: 30px;
+  border-bottom: 2px solid #ccc;/*cria uma linha horizontalmente, contínua, mais a cor*/
+  padding-bottom: 20px;/*espaçamento entre a linha e o topo*/
+  flex-wrap: wrap;/*quebra linha automaticamente e pulam para a próxima linha quando o espaço acaba*/
+}
+
+.foto {
+  width: 150px;/*largura da foto*/
+  height: 150px;/*altura da foto*/
+  border-radius: 100%;/*arredonda a foto*/
+  object-fit: cover;/*tira a distorção*/
+  border: 4px solid #555;/*cria uma borda ao redor da foto*/
+  transition: 0.4s ease;
+  cursor: pointer;
+  
+}
+.foto:hover{/*hover serve pra aplicar um estilo quando o cursor passa por cima*/
+  transform: scale(1.2);/*pulso na imagem*/
+}
+.info-contato {
+  flex: 1;/*força os elementos a crecerem ou diminuírem igualmente*/
+}
+
+.info-contato h1 {/*class nome*/
+  font-size: 28px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.info-contato p {/*pega tudo que é p, no caso o topo inteiro*/
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.info-contato i {/*class ícone*/
+  color: #808080;/*cor dos ícones*/
+  margin-right: 8px;/*espaçamento pra direita do ícone*/
+}
+
+.info-contato a {/*class texto do topo*/
+  color: #333;
+  text-decoration: none;/*remove decorações do texto, como sublinhado, linha sobre o texto, ou linha cortando o texto*/
+}
+
+.info-contato a:hover {
+  text-decoration: underline;/*cria um sublinhado nos links do texto quando o mouse passa em cima*/
+}
+
+.secao {
+  margin-top: 25px;/*espaçamento entre tópicos(margem superior)*/
+
+}
+
+.secao h2 {/*estilização de subtítulos*/
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 8px;/*margem inferior*/
+  border-left: 5px solid #070707;/*tracinho no lado dos tópicos*/
+  padding-left: 10px;/*espaçamento entre a borda da página e a barra*/
+}
+
+.secao p, .secao li {
+  font-size: 15px;/*tamanho da fonte*/
+  line-height: 1.5;/*espaçamento entre linhas*/
+}
+
+.secao ul {/*estilização das listas*/
+  list-style-type: disc;
+  margin-left: 20px;/*margem pra esquerda*/
+}
+
+.botoes-flutuantes {
+  position: fixed;
+  bottom: 20px;/*posição da altura*/
+  right: 20px;/*margem pra direita*/
+  display: flex;
+  flex-direction: column;
+  gap: 15px;/*espaçamento entre os ícones*/
+  z-index: 1000;
+}
+
+.botoes-flutuantes a {/*classe do javascript*/
+  width: 35px;
+  height: 35px;
+  background-color: #25d366; /* WhatsApp */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.botoes-flutuantes a:hover {
+  transform: scale(1.1);
+}
+
+.botoes-flutuantes a.facebook {
+  background-color: #1877f2;
+}
+
+.botoes-flutuantes a.instagram {
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf);
+}
+
+/*Botão de Download do Currículo*/
+.download-button {
+  display: inline-block;
+  padding: 8px 10px;
+  background-color: #007bff;  /* azul */
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-align: center;
+  margin-top: 20px; 
+}
+.download-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+.rodape {
+  margin: 0 auto;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 25px;
+}
+

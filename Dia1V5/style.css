@@ -1,0 +1,126 @@
+/* B. CSS: Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografia geral */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+/* Header & Footer */
+header, footer {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+header h1 {
+  font-size: 2rem;
+}
+footer p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* B. CSS: Layout de posts */
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+.post-card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: calc(50% - 0.5rem);
+  display: flex;
+  flex-direction: column;
+}
+.post-card h2 {
+  font-size: 1.25rem;
+  margin: 0.75rem;
+}
+.post-card h3 {
+  font-size: 1rem;
+  margin: 0 0.75rem 0.5rem;
+  color: #666;
+}
+.post-card img {
+  width: 100%;
+  height: auto;
+}
+.post-card p {
+  flex: 1;
+  margin: 0 0.75rem 0.75rem;
+}
+.post-card a {
+  display: block;
+  margin: 0 0.75rem 0.75rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #0066cc;
+}
+.post-card a:hover {
+  text-decoration: underline;
+}
+
+/* B. CSS: Formulário de novo post */
+.new-post-form {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+.new-post-form h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+#form-post {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+#form-post input,
+#form-post textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+#form-post textarea {
+  grid-column: 1 / -1;
+  resize: vertical;
+  height: 4rem;
+}
+#form-post button {
+  grid-column: 1 / -1;
+  padding: 0.75rem;
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+#form-post button:hover {
+  opacity: 0.9;
+}
+
+/* Responsividade simples */
+@media (max-width: 600px) {
+  .post-card {
+    width: 100%;
+  }
+  #form-post {
+    grid-template-columns: 1fr;
+  }
+}

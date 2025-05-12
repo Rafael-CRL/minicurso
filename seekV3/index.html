@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas - Aula Introdutória</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header class="cabecalho">
+        <h1>Minha Lista de Tarefas</h1>
+        <p class="instrucoes">Adicione tarefas abaixo e clique em "Remover" para excluí-las.</p>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="conteudo">
+        <section class="container">
+            <form id="formTarefa">
+                <input
+                    type="text"
+                    id="inputTarefa"
+                    placeholder="Ex: Estudar HTML"
+                    class="campo-texto"
+                >
+                <button type="submit" class="botao">Adicionar</button>
+            </form>
+
+            <!-- Mensagem de feedback -->
+            <div id="mensagem" class="mensagem"></div>
+
+            <!-- Lista de tarefas -->
+            <ul class="lista-tarefas" id="listaTarefas"></ul>
+        </section>
+    </main>
+
+    <!-- Rodapé simples -->
+    <footer class="rodape">
+        <p>© 2024 Aula de Introdução à Web</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

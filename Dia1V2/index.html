@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card de Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <!-- Cabeçalho do Card -->
+            <div class="card-header">
+                <div class="profile-img">
+                    <img src="https://via.placeholder.com/150" alt="Foto de Perfil">
+                </div>
+                <div class="profile-info">
+                    <h1>Nome do Usuário</h1>
+                    <p>Desenvolvedor Web</p>
+                    <p>São Paulo, Brasil</p>
+                </div>
+                <!-- Botão de tema - para JavaScript -->
+                <button id="theme-toggle" class="theme-btn">🌙</button>
+            </div>
+            
+            <!-- Contadores - para JavaScript -->
+            <div class="stats">
+                <div class="stat-item">
+                    <span id="likes-count">0</span>
+                    <span>Curtidas</span>
+                    <button id="like-btn">👍</button>
+                </div>
+                <div class="stat-item">
+                    <span id="views-count">0</span>
+                    <span>Visualizações</span>
+                </div>
+            </div>
+            
+            <!-- Seção de Habilidades (Expansível com JS) -->
+            <div class="skills-section">
+                <h2>Habilidades <button id="skills-toggle" class="toggle-btn">+</button></h2>
+                <ul id="skills-list" class="skills-list hidden">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Responsividade</li>
+                </ul>
+            </div>
+            
+            <!-- Botão para abrir modal - para JavaScript -->
+            <button id="contact-btn" class="contact-btn">Entre em Contato</button>
+        </div>
+        
+        <!-- Modal de Contato (invisível por padrão) - para JavaScript -->
+        <div id="contact-modal" class="modal hidden">
+            <div class="modal-content">
+                <span id="close-modal" class="close-btn">&times;</span>
+                <h2>Entre em Contato</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

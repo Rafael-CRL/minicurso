@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Declara o conjunto de caracteres -->
+  <meta charset="UTF-8">
+  <!-- Configura responsividade para dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Define o título exibido na aba do navegador -->
+  <title>Mini Blog Interativo</title>
+  <!-- Vincula a folha de estilos externa (ativa para conectar com o próximo dia) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Container principal para organizar o conteúdo, como no portfólio -->
+  <div class="container">
+    <!-- Cabeçalho do blog -->
+    <header class="blog-header">
+      <h1>Meu Mini Blog</h1>
+      <!-- Lista de categorias do blog, similar às listas do portfólio -->
+      <ul class="categories">
+        <li>Desenvolvimento Web</li>
+        <li>JavaScript</li>
+        <li>CSS</li>
+      </ul>
+    </header>
+
+    <!-- Conteúdo principal do blog -->
+    <main class="blog-main">
+      <!-- Seção com um post estático -->
+      <section class="posts">
+        <!-- Div como container do post, simplificando a semântica -->
+        <div class="post-card">
+          <h2>Bem-vindo ao Blog</h2>
+          <p class="post-text">Este é o seu espaço para compartilhar ideias e aprender sobre desenvolvimento web!</p>
+          <!-- Link estilizado como botão, similar aos botões do portfólio -->
+          <a href="#" target="_blank" class="btn read-more-btn">Leia mais</a>
+        </div>
+      </section>
+
+      <!-- Seção com formulário simplificado para adicionar posts -->
+      <section class="new-post-form">
+        <h2>Adicionar novo post</h2>
+        <!-- Formulário com menos campos para iniciantes -->
+        <form class="post-form">
+          <input type="text" id="post-title" placeholder="Título do post" required>
+          <textarea id="post-text" placeholder="Escreva seu post aqui" required></textarea>
+          <button type="submit" class="btn submit-btn">Publicar</button>
+        </form>
+        <!-- Comentário para conectar com o próximo dia -->
+        <!-- No próximo dia, veremos como estilizar este formulário como os botões do portfólio -->
+      </section>
+    </main>
+
+    <!-- Rodapé com informações e link de contato -->
+    <footer class="blog-footer">
+      <p>Workshop HTML • CSS • JS</p>
+      <!-- Botão de contato, inspirado no portfólio -->
+      <a href="mailto:contato@blog.com" class="btn contact-btn">Entre em contato</a>
+    </footer>
+  </div>
+
+  <!-- JavaScript comentado, pois o foco é HTML -->
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><!-- Declara HTML5 e charset -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Responsivo -->
+  <title>Mini Blog Interativo</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+  <!-- A. HTML: Estrutura básica -->
+  <header>
+    <h1>Meu Mini Blog</h1>
+  </header>
+
+  <main>
+    <!-- Post estático inicial -->
+    <section id="post-container" class="posts">
+      <article class="post-card">
+        <h2>Bem-vindo ao Blog</h2>
+        <h3>Introdução ao nosso espaço</h3>
+        <img src="javascript.png" alt="imagem">
+        <p>Este é o seu espaço para compartilhar ideias e aprender sobre desenvolvimento web!</p>
+        <a href="#" target="_blank">Leia mais</a>
+      </article>
+    </section>
+
+    <!-- C. JS: Formulário para adicionar posts -->
+    <section class="new-post-form">
+      <h2>Adicionar novo post</h2>
+      <form id="form-post">
+        <input type="text" id="post-title" placeholder="Título" required>
+        <input type="text" id="post-subtitle" placeholder="Subtítulo" required>
+        <input type="url"  id="post-img" placeholder="URL da imagem" required>
+        <input type="url"  id="post-link" placeholder="Link do post" required>
+        <textarea id="post-text" placeholder="Conteúdo (parágrafo)" required></textarea>
+        <button type="submit">Publicar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Workshop HTML • CSS • JS</p>
+  </footer>
+
+  <!-- <script src="script.js"></script> JS externo -->
+</body>
+</html>
