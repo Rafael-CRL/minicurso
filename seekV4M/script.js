@@ -1,10 +1,13 @@
-function adicionarTarefa(){
-
+function adicionarTarefa(event){
+    event.preventDefault()
 
     let inputTarefa = document.getElementById("inputTarefa")
     let tarefa = inputTarefa.value 
-    
-    console.log(tarefa)
+
+    if(tarefa == ""){
+        document.getElementById("mensagem").textContent = "Por favor, adicione uma tarefa"
+        return
+    }
 
     let mensagem = "tarefa " + tarefa + " adicionada"
     document.getElementById("mensagem").textContent = mensagem
@@ -38,8 +41,3 @@ function removerTarefa(botao) {
     document.getElementById("mensagem").textContent = "Tarefa removida com sucesso"
 
 }
-
-document.getElementById("formTarefa").addEventListener("submit", function(event) {
-    event.preventDefault(); // Previne o comportamento padrão do formulário
-    adicionarTarefa();
-});
