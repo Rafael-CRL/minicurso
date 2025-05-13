@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>Minha lista de tarefas</h1>
+        <p class="instrucoes">Adicione uma tarefa abaixo e clique em "remover" para exclui-la</p>
+    </header>
+
+    <main class="conteudo">
+        <section class="container">
+            <form id="formTarefa"> 
+                <input
+                    type="text"
+                    placeholder="Adicionar Tarefas" 
+                    class="campoTexto"
+                    id="inputTarefa"
+                >
+                <button type="submit" class="botao">Adicionar</button>
+            </form>
+
+            <div class="mensagem" id="mensagem"></div>
+
+            <ul class="listaTarefas" id="listaTarefas"></ul>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2024 Aula de introdução web</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

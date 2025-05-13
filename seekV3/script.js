@@ -29,10 +29,10 @@ function adicionarTarefa() {
     };
     
     // Adicionar o texto e o botão ao item da lista
-    novaTarefa.appendChild(textoTarefa);
-    novaTarefa.appendChild(botaoRemover);
+    novaTarefa.appendChild(textoTarefa); //colocando textoTarefa(que tem a tarefa) em li
+    novaTarefa.appendChild(botaoRemover); // colocando o botao remover em li
 
-    listaTarefas.appendChild(novaTarefa); //adiciona a novaTarefa(genérico li), como filho do listaTarefas(ul)
+    listaTarefas.appendChild(novaTarefa); // adiciona o li a lista ul
 
     inputTarefa.value = ""; // Limpa o campo de entrada
 }
